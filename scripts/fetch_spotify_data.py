@@ -5,10 +5,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import boto3
 from datetime import datetime
 
-
-
-
-
+# Function to fetch Discover Weekly playlist raw data and place it on S3
 def lambda_handler(event, context):
     client_id = os.environ.get('client_id')
     client_secret = os.environ.get('client_secret')
